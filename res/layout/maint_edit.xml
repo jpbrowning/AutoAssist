@@ -1,0 +1,80 @@
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".MainActivity" >
+
+<TextView
+    android:id="@+id/oil"
+    android:text="@string/oilValue"
+    android:textColor="#FFFFFF"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"/>
+  
+  <EditText
+    android:id="@+id/oilNum"
+    android:hint="@string/oilNum"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:inputType="numberDecimal"
+    android:layout_below="@+id/oil"
+    android:layout_margin="10dp"/>
+  
+  <TextView
+    android:id="@+id/brake"
+    android:text="@string/brakeValue"
+    android:layout_width="match_parent"
+    android:textColor="#FFFFFF"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:layout_below="@+id/oilNum"/>
+  
+  <EditText
+    android:id="@+id/brakeNum"
+    android:hint="@string/brakeNum"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:inputType="numberDecimal"
+    android:layout_below="@+id/brake"
+    android:layout_margin="10dp"/>
+  
+  <TextView
+    android:id="@+id/trans"
+    android:text="@string/transValue"
+    android:textColor="#FFFFFF"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:layout_below="@+id/brakeNum"/>
+  
+  <EditText
+    android:id="@+id/transNum"
+    android:hint="@string/transNum"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:inputType="numberDecimal"
+    android:layout_below="@+id/trans"
+    android:layout_margin="10dp"/>
+  
+  <TextView
+    android:id="@+id/belt"
+    android:text="@string/beltValue"
+    android:textColor="#FFFFFF"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:layout_below="@+id/transNum"/>
+  
+  <EditText
+    android:id="@+id/beltNum"
+    android:hint="@string/beltNum"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:inputType="numberDecimal"
+    android:layout_below="@+id/belt"
+    android:layout_margin="10dp"/>
+  
+  </RelativeLayout>

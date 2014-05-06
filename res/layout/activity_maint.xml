@@ -1,0 +1,132 @@
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".MainActivity" >
+    
+    <TextView      
+        android:id="@+id/next_oil" 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/next_oil"
+        android:gravity="bottom|left"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="50dp"/>
+    
+    <TextView
+        android:id="@+id/oil_num"
+        android:layout_below="@+id/next_oil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFCC33"
+        android:textSize="15sp"
+        android:layout_centerHorizontal="true"
+        android:gravity="bottom|center"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"/>
+    
+    <TextView      
+        android:id="@+id/next_brake"
+        android:layout_below="@+id/oil_num"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/next_brake"
+        android:gravity="bottom|left"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="20dp"/>
+    
+    <TextView
+        android:id="@+id/brake_num"
+        android:layout_below="@+id/next_brake"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFCC33"
+        android:textSize="15sp"
+        android:layout_centerHorizontal="true"
+        android:gravity="bottom|center"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"/>
+    
+    <TextView      
+        android:id="@+id/next_trans"
+        android:layout_below="@+id/brake_num"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/next_trans"
+        android:gravity="bottom|left"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="20dp"/>
+    
+    <TextView
+        android:id="@+id/trans_num"
+        android:layout_below="@+id/next_trans"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFCC33"
+        android:textSize="15sp"
+        android:layout_centerHorizontal="true"
+        android:gravity="bottom|center"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"/>
+    
+    <TextView      
+        android:id="@+id/next_belt"
+        android:layout_below="@+id/trans_num"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/next_belt"
+        android:gravity="bottom|left"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="20dp"/>
+    
+    <TextView
+        android:id="@+id/belt_num"
+        android:layout_below="@+id/next_belt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFCC33"
+        android:textSize="15sp"
+        android:layout_centerHorizontal="true"
+        android:gravity="bottom|center"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"/>
+    
+    <TextView      
+        android:id="@+id/current_odo"
+        android:layout_below="@+id/belt_num"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/odometer_hint"
+        android:gravity="bottom|left"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="45dp"/>
+    
+    <TextView
+        android:id="@+id/odo_num"
+        android:layout_below="@+id/current_odo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFCC33"
+        android:textSize="15sp"
+        android:layout_centerHorizontal="true"
+        android:gravity="bottom|center"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"/>
+</RelativeLayout>

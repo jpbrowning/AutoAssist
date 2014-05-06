@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:id="@+id/rootLayout"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:layout_gravity="center_horizontal">
+  
+  <Spinner
+    android:id="@+id/maint_spin"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:entries="@array/maint_array"
+    android:prompt="@string/array_prompt" />
+  
+  <EditText
+    android:id="@+id/odometer"
+    android:hint="@string/odometer_hint"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:inputType="numberDecimal"
+    android:layout_below="@+id/maint_spin"
+    android:layout_margin="20dp"/>
+  
+</RelativeLayout>

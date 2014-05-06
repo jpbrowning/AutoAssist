@@ -1,0 +1,48 @@
+<!-- We use a relative layout, for efficiency and easy alginment between objects. -->
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".MainActivity" > 
+    
+    <!-- The "OxPhone" text field. -->
+    <TextView      
+        android:id="@+id/list_title" 
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:textSize="50sp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/vehicle_list"
+        android:gravity="bottom|center"
+        android:layout_marginTop="25dp"/>
+
+    <!-- The ListViews -->    
+    <ListView
+        android:layout_width="250dp"
+        android:divider="@null"
+        android:layout_height="wrap_content"
+        android:text="@string/vehicles"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/list_title"
+        android:layout_above="@+id/addButton"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/vehicle_list" />
+    
+    <!-- The add car button -->
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="@string/add_vehicle"
+        android:textSize="20sp" 
+        android:textColor="#000000"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="25dp"
+        android:onClick="addButton"
+        android:id="@+id/addButton" />
+
+</RelativeLayout>
